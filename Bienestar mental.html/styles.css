@@ -1,0 +1,190 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8; /* Azul grisáceo muy suave y relajante */
+            color: #334e68; /* Azul oscuro suave para el texto */
+        }
+
+        /* Encabezado */
+        header {
+            background:linear-gradient(135deg,#0F2027,#203A43);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 5px solid #627d98;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.6rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-style: italic;
+            opacity: 0.9;
+            font-size: 1.1rem;
+            color: #bac7d5;
+        }
+
+        /* Navegación Interna Fija */
+        nav {
+            background-color: #243b53;
+            text-align: center;
+            padding: 0.7rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #9fb3c8;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 950px;
+            margin: 25px auto;
+            padding: 0 20px;
+        }
+
+        /* Secciones */
+        section {
+            background: white;
+            padding: 35px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+        }
+
+        h2 {
+            color: #243b53;
+            border-bottom: 3px solid #627d98;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #486581;
+            margin-top: 25px;
+        }
+
+        /* Imágenes */
+        .img-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .img-caption {
+            font-size: 0.9rem;
+            color: #627d98;
+            font-style: italic;
+            margin-top: 7px;
+        }
+
+        /* Listas y Tablas */
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.95rem;
+        }
+
+        table, th, td {
+            border: 1px solid #d9e2ec;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #486581;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f0f4f8;
+        }
+
+        /* Cuadros de Reflexión / Consejos */
+        .calm-box {
+            background-color: #f0f4f8;
+            border-left: 5px solid #627d98;
+            padding: 18px;
+            margin: 20px 0;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #243b53;
+            color: white;
+            text-align: center;
+            padding: 1.8rem 0;
+            margin-top: 50px;
+            border-top: 4px solid #627d98;
+        }
+
+        .btn-regresar {
+    background-color: #2ecc71; /* Un color verde fútbol, puedes cambiarlo */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-regresar:hover {
+    background-color: #27ae60; /* Verde más oscuro al pasar el cursor */
+}
+
+.boton-inicio {
+    background: transparent;    
+    border: none;               
+    color: #ffffff;             
+    font-family: inherit;       
+    font-size: inherit;        
+    font-weight: bold;         
+    padding: 0;                
+    cursor: pointer;           
+}
+
+.boton-inicio:hover {
+    color: #e67e22;
+    transition: color 0.3s ease;
+}
