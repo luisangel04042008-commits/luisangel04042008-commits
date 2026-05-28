@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro Colorido</title>
+    <style>
+        /* Fondo con un degradado moderno y llamativo */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #041975 0%, #34b4e7 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Contenedor principal con bordes suaves y sombra profunda */
+        .contenedor-registro {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        /* Título con un toque de color degradado */
+        .contenedor-registro h2 {
+            text-align: center;
+            color: #4a148c;
+            margin-bottom: 25px;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        /* Estructura para organizar campos en dos columnas si es necesario */
+        .fila-doble {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .grupo-campo {
+            margin-bottom: 20px;
+        }
+
+        .grupo-campo label {
+            display: block;
+            margin-bottom: 8px;
+            color: #4a5568;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* Inputs estilizados y coloridos */
+        .grupo-campo input, .grupo-campo select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            background-color: #f7fafc;
+        }
+
+        /* Efecto brillante y colorido al seleccionar un campo (Focus) */
+        .grupo-campo input:focus, .grupo-campo select:focus {
+            border-color: #667eea;
+            background-color: #ffffff;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+            outline: none;
+        }
+
+        /* Botón de registro llamativo con efecto hover */
+        .btn-registrar {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 75, 43, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 10px;
+        }
+
+        .btn-registrar:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 75, 43, 0.5);
+        }
+
+        .btn-registrar:active {
+            transform: translateY(0);
+        }
+
+        /* --- NUEVOS ESTILOS PARA EL MENSAJE DE ÉXITO --- */
+        .mensaje-exito {
+            display: none; /* Oculto al principio */
+            text-align: center;
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        .mensaje-exito h3 {
+            color: #27ae60;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        .mensaje-exito p {
+            color: #4a5568;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .btn-regresar {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4a148c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .btn-regresar:hover {
+            background-color: #6a1b9a;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Ajuste para pantallas pequeñas (móviles) */
+        @media (max-width: 480px) {
+            .fila-doble {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-registro">
+        <!-- Bloque del Formulario -->
+        <div id="bloque-formulario">
+            <h2>Únete a Nosotros</h2>
+            
+            <form id="miFormulario" onsubmit="mostrarExito(event)">
+                
+                <div class="fila-doble">
+                    <div class="grupo-campo">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" required>
+                    </div>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="usuario">Nombre de Usuario</label>
+                    <input type="text" id="usuario" name="username" placeholder="Ej: carlos99" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="email" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="fila-doble">
+                    <div class="grupo-campo">
+                        <label for="telefono">Número de Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+123456789" required>
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                    </div>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="pais">País</label>
+                    <select id="pais" name="pais" required>
+                        <option value="" disabled selected>Selecciona tu país</option>
+                        <option value="MX">México</option>
+                        <option value="CO">Colombia</option>
+                        <option value="AR">Argentina</option>
+                        <option value="ES">España</option>
+                        <option value="CL">Chile</option>
+                        <option value="PE">Perú</option>
+                        <option value="US">Estados Unidos</option>
+                        <option value="Otros">Otro país</option>
+                    </select>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="password" placeholder="Mínimo 6 caracteres" minlength="6" required>
+                </div>
+
+                <button type="submit" class="btn-registrar">Crear Cuenta</button>
+                
+            </form>
+        </div>
+
+        <!-- Bloque Oculto del Mensaje de Éxito -->
+        <div id="bloque-exito" class="mensaje-exito">
+            <h3>¡Registro Completado!</h3>
+            <p>Tu cuenta ha sido creada con éxito.</p>
+            <!-- Puedes cambiar history.back() por la URL de tu página principal si la tienes, ejemplo: window.location.href='index.html' -->
+            <button onclick="history.back()" class="btn-regresar">Volver a la página principal</button>
+        </div>
+    </div>
+
+    <!-- Script para controlar la vista -->
+    <script>
+        function mostrarExito(event) {
+            // Evita que la página se recargue o intente buscar el archivo del servidor
+            event.preventDefault(); 
+            
+            // Oculta el formulario y muestra el mensaje de agradecimiento
+            document.getElementById('bloque-formulario').style.display = 'none';
+            document.getElementById('bloque-exito').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
