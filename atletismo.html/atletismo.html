@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mundo del Atletismo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>El Mundo del Atletismo</h1>
+        <p>El arte de correr, saltar y lanzar: la esencia de los Juegos Olímpicos</p>
+    </header>
+
+    <nav>
+        <a href="#historia">Historia</a>
+        <a href="#disciplinas">Disciplinas</a>
+        <a href="#reglas">Reglas Clave</a>
+        <a href="#leyendas">Atletas Icónicos</a>
+        <a href="#Inicio"><button onclick="history.back()" class="boton-inicio">Inicio</button></a>
+    </nav>
+
+    <div class="container">
+
+        <section id="historia">
+            <h2>1. Historia del Atletismo</h2>
+            <p>El atletismo es considerado el deporte organizado más antiguo del planeta. Sus orígenes se entrelazan con los albores de la humanidad, ya que correr, saltar y lanzar eran habilidades fundamentales para la supervivencia.</p>
+            
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=800" alt="Corredores en una pista de atletismo">
+                <div class="img-caption">La pista de atletismo moderna, el escenario donde los humanos desafían los límites de la velocidad.</div>
+            </div>
+
+            <p>La primera referencia histórica documentada se remonta al año <strong>776 a.C.</strong> en la antigua Grecia, coincidiendo con los primeros Juegos Olímpicos de la Antigüedad. En aquella época, la única prueba era una carrera de velocidad a lo largo de un estadio (unos 192 metros).</p>
+            <p>El deporte decayó tras la abolición de los juegos por parte del emperador romano Teodosio, pero resurgió con gran fuerza en la Inglaterra del siglo XIX. Con la celebración de los primeros Juegos Olímpicos de la era moderna en <strong>Atenas 1896</strong>, el atletismo se consolidó como la disciplina reina de los juegos. En 1912 se fundó la Federación Internacional de Atletismo Amateur (actualmente conocida como <strong>World Athletics</strong>), el organismo que regula el deporte hoy en día.</p>
+        </section>
+
+        <section id="disciplinas">
+            <h2>2. Grandes Bloques de Disciplinas</h2>
+            <p>El atletismo no es un solo deporte, sino un conjunto complejo de pruebas que miden la fuerza, la resistencia, la velocidad y la técnica. Se dividen principalmente en tres grandes categorías:</p>
+
+            <h3>A. Pruebas de Pista (Carreras)</h3>
+            <ul>
+                <li><strong>Velocidad:</strong> Carreras de 100m, 200m y 400m. Exigen una explosividad muscular máxima.</li>
+                <li><strong>Medio Fondo:</strong> Pruebas de 800m y 1500m que combinan velocidad táctica con resistencia.</li>
+                <li><strong>Fondo:</strong> Carreras de 5000m y 10,000m, además de la mítica <strong>Maratón (42.195 km)</strong> realizada en ruta.</li>
+                <li><strong>Vallas y Obstáculos:</strong> Carreras con barreras que los atletas deben sortear sin perder el ritmo (por ejemplo, 110m vallas o 3000m obstáculos).</li>
+                <li><strong>Relevos:</strong> Eventos por equipos (4x100m y 4x400m) donde se transfiere un testigo de madera o metal.</li>
+            </ul>
+
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=800" alt="Atleta saltando">
+                <div class="img-caption">El salto de longitud requiere velocidad en la carrera y una técnica perfecta de elevación.</div>
+            </div>
+
+            <h3>B. Pruebas de Campo (Concursos)</h3>
+            <ul>
+                <li><strong>Saltos:</strong> Salto de longitud, triple salto, salto de altura y salto con pértiga (garrocha).</li>
+                <li><strong>Lanzamientos:</strong> Lanzamiento de bala (peso), disco, martillo y jabalina. Exigen una tremenda potencia de torsión y coordinación.</li>
+            </ul>
+
+            <h3>C. Pruebas Combinadas y Marcha</h3>
+            <ul>
+                <li><strong>Pruebas Combinadas:</strong> El <em>Decatlón</em> (10 pruebas para hombres) y el <em>Heptatlón</em> (7 pruebas para mujeres) premian al atleta más completo tras varios días de competencia.</li>
+                <li><strong>Marcha Atlética:</strong> Carreras de larga distancia (habitualmente 20km y 35km) donde se exige mantener siempre un pie en contacto visual con el suelo.</li>
+            </ul>
+        </section>
+
+        <section id="reglas">
+            <h2>3. Reglas Esenciales y Funcionamiento</h2>
+            <p>Para asegurar una competencia justa, existen normativas internacionales muy estrictas que todo atleta debe cumplir:</p>
+
+            <div class="highlight-box">
+                <strong>¿Sabías qué?</strong> En las pruebas de velocidad, si un atleta reacciona al disparo de salida en menos de 0.100 segundos, se considera una "salida en falso", ya que el cerebro humano no es capaz de procesar el sonido e iniciar el movimiento más rápido que ese tiempo.
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspecto</th>
+                        <th>Regla Principal</th>
+                        <th>Penalización / Consecuencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Salida en Falso</strong></td>
+                        <td>Ningún atleta puede moverse antes de que suene el disparo del juez.</td>
+                        <td>Descalificación inmediata automática.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Líneas de la Pista</strong></td>
+                        <td>En carreras de carriles asignados (como los 100m), no se puede pisar el carril vecino.</td>
+                        <td>Descalificación si se obtiene una ventaja o se obstruye a otro corredor.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Intentos en Lanzamientos/Saltos</strong></td>
+                        <td>Los atletas disponen de un número limitado de intentos (usualmente entre 3 y 6).</td>
+                        <td>Si pisan la línea límite, el intento se declara "Nulo".</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Marcha Atlética</strong></td>
+                        <td>El atleta no puede perder el contacto con el suelo ni doblar la rodilla de la pierna de apoyo.</td>
+                        <td>Acumulación de tarjetas amarillas que derivan en penalizaciones de tiempo o descalificación.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="leyendas">
+            <h2>4. Atletas Icónicos de la Historia</h2>
+            <p>El atletismo ha forjado a leyendas que han llevado las capacidades físicas del ser humano a límites que antes se consideraban biológicamente imposibles:</p>
+            <h3 class="nombre-leyenda">Usain St. Leo Bolt</h3>
+<ul>
+    <li><strong>Orígenes humildes en Sherwood Content:</strong> Usain nació el 21 de agosto de 1986 en Sherwood Content, un pequeño pueblo de la parroquia de Trelawny, en Jamaica. 
+        Fue hijo de Wellesley y Jennifer Bolt, quienes gestionaban una modesta tienda de comestibles rural. Su infancia transcurrió en un entorno sencillo, donde pasaba las horas jugando al críquet y al fútbol en la calle junto a su hermano. <br>
+        El deporte fue su pasión natural desde el primer momento. Aunque al principio su sueño era destacar en el críquet, sus entrenadores de la escuela primaria Waldensia notaron de inmediato su descomunal velocidad natural en las carreras de velocidad. Su talento era tan evidente que a los 14 años ya ganaba medallas en los campeonatos escolares nacionales, llamando la atención de entrenadores de élite que vieron en ese chico alto y algo descoordinado el potencial de una futura estrella del atletismo mundial.</li>
+        <br>
+        <figure class="contenedor-imagen">
+            <img src="usaint joven.avif" alt="Usain Bolt de joven" height="400" width="280">
+            <div class="img-caption">Orígenes Humildes: Los primeros destellos del Rayo de Trelawny</div>
+        </figure>
+        
+    <li><strong>El salto al escenario mundial:</strong> Fue en el Campeonato Mundial Junior de 2002, celebrado en Kingston, donde un joven Usain de solo 15 años sorprendió al mundo al ganar los 200 metros lisos ante su propio público, convirtiéndose en el campeón mundial junior más joven de la historia.
+
+        Su mentor y entrenador definitivo, Glen Mills, lo guio pacientemente para corregir sus problemas de postura y escoliosis, transformando su imponente zancada en un arma de destrucción masiva sobre la pista. Dejó de ser solo una promesa caribeña para convertirse en una fuerza de la naturaleza indomable.
+        <li>Títulos clave: Campeón Mundial Junior (2002) y múltiples récords de categorías juveniles.</li>
+        <li>Logros individuales: Primer atleta junior en bajar de los 20 segundos en los 200 metros netos.</li>
+        <br>
+        <figure class="contenedor-imagen">
+            <img src="usaint en sus inicios.avif" alt="Usain Bolt en sus inicios" height="400" width="600">
+            <div class="img-caption">El Amanecer del Rayo: El mundo descubre la velocidad pura en Kingston</div>
+        </figure>
+    </li>
+
+    <li><strong>La era dorada y la velocidad histórica:</strong> En el verano de 2008, Usain Bolt llegó a los Juegos Olímpicos de Pekín listo para asaltar la inmortalidad. Su presentación en la pista del "Nido de Pájaro" colmado por miles de espectadores anticipaba un hito histórico sin precedentes en la velocidad. <br>
+        En Pekín y posteriormente en Berlín, Bolt alcanzó su madurez física absoluta, protagonizando las exhibiciones de velocidad pura más impactantes que el deporte haya visto jamás, desafiando las leyes de la física con su característico gesto del "Rayo" (Lightning Bolt). Rompió todos los límites del cronómetro, corriendo a una velocidad media inalcanzable para cualquier ser humano.
+        
+    <div class="contenedor-cronologia-claro">
+        <div class="bloque-evento-claro">
+            <div class="columna-grafica-clara">
+                <div class="circulo-nodo-claro"></div>
+                <div class="linea-punteada-clara"></div>
+            </div>
+            <div class="columna-texto-clara">
+                <h3>El Espectáculo de Pekín</h3>
+                <span class="año-claro">2008</span>
+                <p>Destrozó el récord mundial de los 100 metros lisos cronometrando 9.69 segundos, frenando y celebrando varios metros antes de cruzar la línea de meta con los brazos abiertos.</p>
+            </div>
+        </div>
+        
+        <div class="bloque-evento-claro">
+            <div class="columna-grafica-clara">
+                <div class="circulo-nodo-claro"></div>
+                <div class="linea-punteada-clara"></div>
+            </div>
+            <div class="columna-texto-clara">
+                <h3>La Barrera Imposible de Berlín</h3>
+                <span class="año-claro">2009</span>
+                <p>Estableció los récords mundiales definitivos e históricos en el Campeonato Mundial de Berlín: 9.58 segundos en los 100 metros y unos estratosféricos 19.19 segundos en los 200 metros.</p>
+            </div>
+        </div>
+
+        <div class="bloque-evento-claro">
+            <div class="columna-grafica-clara">
+                <div class="circulo-nodo-claro"></div>
+            </div>
+            <div class="columna-texto-clara">
+                <h3>El Triplete del Relevo</h3>
+                <span class="año-claro">2008 – 2012</span>
+                <p>Lideró al implacable equipo de Jamaica para romper también el récord mundial del relevo 4x100 metros, consolidando la hegemonía total caribeña en el planeta.</p>
+            </div>
+        </div>
+    </div>
+    
+    <p>Durante su glorioso reinado en las pistas, sumó múltiples galardones como el Premio Laureus al Mejor Deportista Mundial del Año (2009, 2010, 2013 y 2017).</p>
+    <figure class="contenedor-imagen">
+        <img src="usaint en berlin.avif" alt="Usain Bolt en Berlín" height="400" width="800">
+        <div class="img-caption">Berlín 2009: El momento exacto en que el cronómetro se detuvo en 9.58 segundos</div>
+    </figure>
+    </li>
+
+    <li><strong>Nuevos retos, Londres, Río de Janeiro y Retiro</strong><br><br>
+        <ol><strong>✔Juegos Olímpicos de Londres (2012):</strong> Buscando revalidar su corona, se mudó al escenario británico. Allí silenció las dudas previas ganando el oro en 100m, 200m y 4x100m, convirtiéndose en el primer atleta en defender con éxito ambos títulos de velocidad en citas olímpicas consecutivas.</ol>
+        <figure class="contenedor-imagen">
+            <img src="usaint en londres.jpg" alt="Usain Bolt en Londres" height="400" width="520">
+            <div class="img-caption">Inmortalizando la Corona en el Estadio Olímpico de Londres</div>
+        </figure>
+
+        <ol><strong>✔El histórico "Triple-Triple" en Río (2016):</strong> Llegó a Brasil para consolidar un hito inalcanzable. Conquistó por tercera vez consecutiva las tres medallas de oro olímpicas en juego, completando una hazaña legendaria que selló para siempre su estatus de mito viviente antes de despedirse oficialmente de las pistas en 2017.</ol>
+        <figure class="contenedor-imagen">
+            <img src="usaint en rio.jpg" alt="Usain Bolt en Río" height="400" width="650">
+            <div class="img-caption">El cierre perfecto: La última gran sonrisa del Rayo en Río de Janeiro</div>
+        </figure>
+
+        <ol><strong>✔Incursión en el Fútbol Profesional (2018):</strong> En un sorpresivo giro tras dejar el atletismo, Bolt persiguió su viejo sueño de la infancia entrenando y llegando a debutar en partidos amistosos de fútbol profesional con el Central Coast Mariners de Australia, demostrando que su carisma y potencia física trascendían cualquier disciplina.</ol>
+        <figure class="contenedor-imagen">
+            <img src="usaint jugando futbol.jpg" alt="Usain Bolt jugando fútbol" height="400" width="580">
+            <div class="img-caption">La pasión continúa: Bolt expande sus límites en el terreno de juego</div>
+        </figure>
+    </li>
+
+    <li><strong>Leyenda eterna del Deporte Mundial</strong>Con sus espectaculares logros, Usain Bolt llevó al atletismo a la primera plana del entretenimiento global. Superó todas las presiones y exigencias físicas para alcanzar la cima absoluta y mantenerse sonriente en ella: <br><br>
+        <ol><strong>✔8 Medallas de Oro Olímpicas:</strong> Dominó de forma absoluta las citas de Pekín 2008, Londres 2012 y Río 2016 sin perder una sola final disputada.</ol>
+        <ol><strong>✔11 Títulos Mundiales:</strong> Levantó la máxima presea en los campeonatos de Berlín, Daegu, Moscú y Pekín.</ol><br><br>
+        Actualmente, Usain Bolt ostenta los récords mundiales imbatibles de los 100 y 200 metros lisos, manteniéndose firmemente como el hombre más rápido de todos los tiempos. <br><br>
+        Su trayectoria es el reflejo de una alegría caribeña inquebrantable, condiciones genéticas fuera de serie y una mentalidad competitiva implacable que revolucionó la historia del deporte para siempre.
+        <figure class="contenedor-imagen">
+            <img src="usaint bandera.avif" alt="Usain Bolt bandera de Jamaica" height="500" width="690">
+            <div class="img-caption">Orgullo de una nación: Pasión eterna por los colores de Jamaica</div>
+        </figure>
+    </li>
+</ul>
+<h3 class="nombre-leyenda">Frederick Carlton Lewis</h3>
+<ul>
+    <li><strong>Orígenes humildes en Birmingham:</strong> Carl nació el 1 de julio de 1961 en Birmingham, Alabama. 
+        Creció en el seno de una familia muy unida a la comunidad afroamericana y profundamente ligada al deporte; sus padres, William y Evelyn Lewis, eran entrenadores de atletismo y fundaron un club local para jóvenes atletas. Aunque de niño era de constitución baja y delgada comparado con sus hermanos, encontró en las pistas de arena y arcilla su propio espacio de expresión. <br>
+        El atletismo fue su destino desde la infancia. Empezó a competir desde muy joven y, tras mudarse a Nueva Jersey, su progresión fue tan meteórica que llamó la atención de la Universidad de Houston. Dejar su hogar para mudarse a Texas bajo la tutela del legendario entrenador Tom Tellez fue un paso crucial y exigente, donde tuvo que pulir una técnica de salto y velocidad que lo transformaría en una fuerza dominante.</li>
+        <br>
+        <figure class="contenedor-imagen">
+            <img src="carl lewis joven.jpeg" alt="Carl Lewis joven" height="400" width="300">
+            <div class="img-caption">Orígenes Humildes: Los Inicios del Hijo del Viento</div>
+        </figure>
+        
+    <li><strong>El salto al escenario mundial:</strong> Fue a principios de la década de 1980 cuando el nombre de Carl Lewis empezó a resonar con fuerza global. Su consagración definitiva llegó en el primer Campeonato Mundial de Atletismo en Helsinki 1983, donde un joven e impetuoso Lewis de 22 años conquistó tres medallas de oro, dejando boquiabiertos a los expertos del deporte.
+
+        Su elegancia al correr y su zancada perfecta se convirtieron en su sello personal. Tom Tellez lo moldeó para coordinar su velocidad punta con una batida perfecta en el salto de longitud, convirtiéndolo no solo en un velocista temible, sino en el saltador más regular y peligroso del planeta.
+        <li>Títulos clave: 3 Medallas de oro en el Mundial de Helsinki (1983).</li>
+        <li>Logros individuales: Dominio absoluto en las pruebas de 100 metros, 200 metros y salto de longitud.</li>
+        <br>
+        <figure class="contenedor-imagen">
+            <img src="carl lewis 1983.jpg" alt="Carl Lewis en Helsinki" height="400" width="500">
+            <div class="img-caption">El Amanecer de un Mito: Carl Lewis Domina el Mundo en 1983</div>
+        </figure>
+    </li>
+
+    <li><strong>La era dorada y la rivalidad histórica:</strong> En el verano de 1984, Carl Lewis llegó a los Juegos Olímpicos de Los Ángeles con la enorme presión de emular la gesta histórica de Jesse Owens en 1936. Su presentación ante un Memorial Coliseum totalmente abarrotado anticipaba una de las mayores exhibiciones de la historia olímpica. <br>
+        En Los Ángeles, y posteriormente en la intensa y polémica rivalidad con el canadiense Ben Johnson en Seúl 1988, Lewis alcanzó su madurez competitiva absoluta. Se convirtió en un fenómeno mediático global que llevó al atletismo a una dimensión profesional nunca antes vista, encadenando victorias consecutivas y desafiando los límites del rendimiento humano en múltiples disciplinas simultáneamente.
+        
+    <div class="contenedor-cronologia-claro">
+        <div class="bloque-evento-claro">
+            <div class="columna-grafica-clara">
+                <div class="circulo-nodo-claro"></div>
+                <div class="linea-punteada-clara"></div>
+            </div>
+            <div class="columna-texto-clara">
+                <h3>La Hazaña de los Cuatro Oros</h3>
+                <span class="año-claro">1984</span>
+                <p>Igualó el mítico récord de Jesse Owens al ganar cuatro medallas de oro en una sola edición olímpica: 100m, 200m, salto de longitud y el relevo 4x100m.</p>
+            </div>
+        </div>
+        
+        <div class="bloque-evento-claro">
+            <div class="columna-grafica-clara">
+                <div class="circulo-nodo-claro"></div>
+                <div class="linea-punteada-clara"></div>
+            </div>
+            <div class="columna-texto-clara">
+                <h3>El Drama y la Redención de Seúl</h3>
+                <span class="año-claro">1988</span>
+                <p>Tras la descalificación de Ben Johnson por dopaje, Lewis se adjudicó el oro en los 100 metros con récord mundial, además de revalidar su corona en salto de longitud.</p>
+            </div>
+        </div>
+
+        <div class="bloque-evento-claro">
+            <div class="columna-grafica-clara">
+                <div class="circulo-nodo-claro"></div>
+            </div>
+            <div class="columna-texto-clara">
+                <h3>La Carrera del Siglo en Tokio</h3>
+                <span class="año-claro">1991</span>
+                <p>Se coronó en el Mundial de Tokio al ganar los 100 metros lisos deteniendo el cronómetro en unos espectaculares 9.86 segundos, estableciendo un nuevo récord del mundo.</p>
+            </div>
+        </div>
+    </div>
+    
+    <p>Durante su prolongado reinado en las pistas, fue nombrado repetidamente "Atleta del Año" por diversas federaciones mundiales y agencias de prestigio internacional.</p>
+    <figure class="contenedor-imagen">
+        <img src="carl lewis en los angeles.jpg" alt="Carl Lewis en Los Ángeles" height="400" width="650">
+        <div class="img-caption">Los Ángeles 1984: El Cierre de una Hazaña Histórica e Inmortal</div>
+    </figure>
+    </li>
+
+    <li><strong>Nuevos retos, Barcelona, Atlanta y Legado Legendario</strong><br><br>
+        <ol><strong>✔Juegos Olímpicos de Barcelona (1992):</strong> Demostrando que su vigencia seguía intacta, se mudó al escenario español. Allí conquistó su tercer oro consecutivo en salto de longitud superando a su gran rival Mike Powell, y lideró el relevo 4x100m para imponer un nuevo récord mundial.</ol>
+        <figure class="contenedor-imagen">
+            <img src="carl lewis 1992.jpg" alt="Carl Lewis en Barcelona" height="400" width="600">
+            <div class="img-caption">Inmortalizando la Gloria sobre el Foso de Barcelona</div>
+        </figure>
+
+        <ol><strong>✔El histórico tetracampeonato en Atlanta (1996):</strong> Llegó a su propio país para consolidar un hito casi inalcanzable. Con un salto legendario de 8.50 metros, conquistó por cuarta vez consecutiva la medalla de oro en salto de longitud, una hazaña que selló para siempre su estatus de mito olímpico viviente antes de su retiro oficial en 1997.</ol>
+        <figure class="contenedor-imagen">
+            <img src="carl lewis 1996.jpg" alt="Carl Lewis en Atlanta" height="400" width="600">
+            <div class="img-caption">El noveno oro: La última gran hazaña del Hijo del Viento en Atlanta</div>
+        </figure>
+
+        <ol><strong>✔Reconocimiento Histórico del COI (1999):</strong> En un merecido homenaje a su trayectoria tras dejar las pistas, Lewis fue elegido por el Comité Olímpico Internacional como el "Atleta del Siglo", consolidando un impacto cultural y deportivo que trascendió las pistas de atletismo.</ol>
+        <figure class="contenedor-imagen">
+            <img src="carl lewis medallas.png" alt="Carl Lewis galardón" height="400" width="520">
+            <div class="img-caption">La consagración eterna: Reconocido como el Atleta del Siglo XX</div>
+        </figure>
+    </li>
+
+    <li><strong>Leyenda Inigualable del Atletismo Mundial</strong>Con sus espectaculares logros, Carl Lewis llevó al olimpismo a la cúspide del reconocimiento global. Superó relevos generacionales, críticas y una exigencia física brutal para mantenerse en la cima durante casi dos décadas: <br><br>
+        <ol><strong>✔9 Medallas de Oro Olímpicas:</strong> Dominó de forma absoluta en las citas de Los Ángeles 1984, Seúl 1988, Barcelona 1992 y Atlanta 1996, sumando además una presea de plata.</ol>
+        <ol><strong>✔8 Títulos Mundiales:</strong> Levantó la máxima presea en los campeonatos de Helsinki, Roma y Tokio a lo largo de su carrera.</ol><br><br>
+        Actualmente, Carl Lewis es recordado como uno de los poquísimos atletas en la historia en ganar la misma prueba individual en cuatro Juegos Olímpicos consecutivos. <br><br>
+        Su carrera es el reflejo de una técnica perfecta, una longevidad deportiva fuera de serie y un hambre de gloria que revolucionó la historia del deporte aficionado hacia la era moderna.
+        <figure class="contenedor-imagen">
+            <img src="carl lewis bandera.jpg" alt="Carl Lewis bandera" height="400" width="600">
+            <div class="img-caption">Orgullo de una nación: Pasión eterna por las barras y las estrellas</div>
+        </figure>
+    </li>
+</ul>
+<h3 class="nombre-leyenda">Eliud Kipchoge</h3>
+<ul>
+    <li><strong>Orígenes humildes en Nandi:</strong> Eliud nació el 5 de noviembre de 1984 en Kapsisiywa, en el distrito de Nandi, Kenia. 
+        Fue el menor de cuatro hermanos criados únicamente por su madre, una dedicada profesora de escuela primaria, tras la temprana muerte de su padre. Su infancia transcurrió en un entorno rural muy sencillo; de niño, corría varios kilómetros descalzo todos los días simplemente para llegar a su escuela y ayudaba a su familia transportando pesados galones de leche en bicicleta para venderlos en el mercado local. <br>
+        El atletismo estuvo en sus raíces desde siempre. En los caminos de tierra de su aldea conoció a Patrick Sang, un exmedallista olímpico que se convirtió en su entrenador de toda la vida y figura paterna. Bajo su guía y en el austero campamento de entrenamiento en Kaptagat, Eliud forjó una disciplina de acero y una ética de trabajo espartana que marcarían el inicio de una de las trayectorias más admirables de la historia del fondismo mundial.</li>
+        <br>
+        <figure class="contenedor-imagen">
+            <img src="Eliud joven.jpg" alt="Eliud Kipchoge joven" height="400" width="600">
+            <div class="img-caption">Orígenes Humildes: Los primeros pasos del filósofo de las pistas</div>
+        </figure>
+        
+    <li><strong>El salto al escenario mundial:</strong> Fue en agosto de 2003, durante el Campeonato Mundial de Atletismo en París, donde un joven Kipchoge de apenas 18 años sorprendió por completo al planeta. En una electrizante final de 5000 metros, derrotó en el último suspiro a dos titanes consagrados de la época: Hicham El Guerrouj y Kenenisa Bekele.
+
+        Tras una exitosa carrera en las pistas que incluyó medallas olímpicas en Atenas y Pekín, tomó una decisión crucial junto a Patrick Sang: dar el salto definitivo al asfalto de las maratones de 42.195 kilómetros. En esta transición, Kipchoge evolucionó de ser un velocista de fondo a convertirse en la mente más brillante y metódica de las carreras de resistencia.
+        <li>Títulos clave: Campeón Mundial de 5000m (2003) y su primera victoria en maratón en Hamburgo (2013).</li>
+        <li>Logros individuales: Dominio absoluto en los prestigiosos World Marathon Majors de Londres y Berlín.</li>
+        <br>
+        <figure class="contenedor-imagen">
+            <img src="Eliud en manchester.jpeg" alt="Eliud Kipchoge en Manchester" height="400" width="720">
+            <div class="img-caption">El Amanecer del Maestro: El triunfo dorado de Kipchoge en París 2003</div>
+        </figure>
+    </li>
+
+    <li><strong>La era dorada y la velocidad histórica:</strong> En la última década, Kipchoge alcanzó su madurez física y mental absoluta, protagonizando una época dorada de dominio incuestionable en las maratones más exigentes del mundo. Con su icónico lema *"No human is limited"* (Ningún humano tiene límites), desafió las barreras biológicas de la resistencia humana. <br>
+        En la mítica recta del Maratón de Berlín, Eliud destrozó los límites del cronómetro de forma consecutiva, promediando ritmos de carrera considerados imposibles para un ser humano. Su zancada fluida y su característica sonrisa en los momentos de máximo dolor se convirtieron en su sello de identidad universal en el asfalto.
+        
+    <div class="contenedor-cronologia-claro">
+        <div class="bloque-evento-claro">
+            <div class="columna-grafica-clara">
+                <div class="circulo-nodo-claro"></div>
+                <div class="linea-punteada-clara"></div>
+            </div>
+            <div class="columna-texto-clara">
+                <h3>El Récord de Berlín</h3>
+                <span class="año-claro">2018</span>
+                <p>Estableció un récord mundial histórico en el Maratón de Berlín cronometrando 2:01:39, rebajando de forma descomunal la marca anterior por 78 segundos.</p>
+            </div>
+        </div>
+        
+        <div class="bloque-evento-claro">
+            <div class="columna-grafica-clara">
+                <div class="circulo-nodo-claro"></div>
+                <div class="linea-punteada-clara"></div>
+            </div>
+            <div class="columna-texto-clara">
+                <h3>El Reto Humano Ineos 1:59</h3>
+                <span class="año-claro">2019</span>
+                <p>Hizo historia en Viena al convertirse en el primer y único ser humano en correr la distancia de una maratón en menos de dos horas, deteniendo el reloj en unos estratosféricos 1:59:40.</p>
+            </div>
+        </div>
+
+        <div class="bloque-evento-claro">
+            <div class="columna-grafica-clara">
+                <div class="circulo-nodo-claro"></div>
+            </div>
+            <div class="columna-texto-clara">
+                <h3>Superación Definitiva en Berlín</h3>
+                <span class="año-claro">2022</span>
+                <p>Regresó a las calles de la capital alemana para superar su propia marca perfecta, deteniendo el cronómetro oficial del mundo en unos increíbles 2:01:09.</p>
+            </div>
+        </div>
+    </div>
+    
+    <p>Durante su glorioso reinado en la distancia reina, sumó múltiples galardones internacionales, incluyendo el prestigioso Premio Princesa de Asturias de los Deportes (2023).</p>
+    <figure class="contenedor-imagen">
+        <img src="Eliud 2019.avif" alt="Eliud en berlin" height="400" width="650">
+        <div class="img-caption">Viena 2019: El histórico momento en que el ser humano rompió la barrera de las dos horas</div>
+    </figure>
+    </li>
+
+    <li><strong>Nuevos retos, Río de Janeiro, Tokio y París</strong><br><br>
+        <ol><strong>✔Juegos Olímpicos de Río (2016):</strong> Buscando la consagración olímpica definitiva en el asfalto, se mudó al escenario brasileño. Allí dictó una cátedra de estrategia bajo la lluvia para ganar su primera medalla de oro olímpica en maratón con total autoridad.</ol>
+        <figure class="contenedor-imagen">
+            <img src="eliud 2016.jpeg" alt="Kipchoge en Río" height="400" width="650">
+            <div class="img-caption">Inmortalizando la Corona Olímpica en el Sambódromo de Río</div>
+        </figure>
+
+        <ol><strong>✔El bicampeonato en Tokio (2020):</strong> Volvió a la máxima cita deportiva en una edición complicada celebrada en Sapporo debido al calor extremo. A pesar de las difíciles condiciones físicas, se escapó en solitario para revalidar su oro olímpico, emulando a leyendas como Abebe Bikila.</ol>
+        <figure class="contenedor-imagen">
+            <img src="eliud 2020.avif" alt="Kipchoge en Tokio" height="400" width="630">
+            <div class="img-caption">El rey del asfalto: Magia y autoridad pura en los Juegos Olímpicos de Tokio</div>
+        </figure>
+
+        <ol><strong>✔La Leyenda en los Juegos de París (2024):</strong> En agosto de 2024, Kipchoge acudió a sus quintos Juegos Olímpicos en París para enfrentarse a uno de los recorridos más duros e históricos de la historia del olimpismo, demostrando que su nombre ya está grabado para siempre con letras de oro en el Olimpo del deporte mundial.</ol>
+        <figure class="contenedor-imagen">
+            <img src="eliud 2024.webp" alt="Kipchoge en París" height="400" width="600">
+            <div class="img-caption">La leyenda continúa: Kipchoge expande su legado en las calles de París</div>
+        </figure>
+    </li>
+
+    <li><strong>Leyenda eterna del Deporte Mundial</strong>Con sus espectaculares logros, Eliud Kipchoge llevó al atletismo de fondo a la primera plana del entretenimiento y la inspiración global. Superó todas las exigencias físicas y la edad para mantenerse en la cumbre absoluta con una humildad ejemplar: <br><br>
+        <ol><strong>✔4 Medallas Olímpicas:</strong> Consiguió preseas en Atenas 2004, Pekín 2008, Río 2016 y Tokio 2020, consolidando una longevidad deportiva inigualable.</ol>
+        <ol><strong>✔11 Victorias en Grandes Maratones:</strong> Dominó de forma implacable las competitivas calles de los Majors de Londres, Berlín, Chicago y Tokio.</ol><br><br>
+        Actualmente, Eliud Kipchoge es considerado de forma unánime como el maratonista más grande de todos los tiempos. <br><br>
+        Su carrera es el reflejo de una paz mental inquebrantable, una preparación física obsesiva basada en la vida sencilla del campamento keniano y un hambre de gloria que ha demostrado al mundo que los límites son solo mentales.
+        <figure class="contenedor-imagen">
+            <img src="eliud bandera.jpg" alt="Eliud bandera" height="400" width="630">
+            <div class="img-caption">Orgullo de una nación: Pasión eterna por los colores de Kenia</div>
+        </figure>
+    </li>
+</ul>
+<h3 class="nombre-leyenda">Jacqueline Joyner-Kersee</h3>
+<ul>
+    <li><strong>Orígenes humildes en East St. Louis:</strong> Jackie nació el 3 de marzo de 1962 en East St. Louis, Illinois. 
+        Fue nombrada en honor a la primera dama Jacqueline Kennedy, con la esperanza de su familia de que lograra grandes cosas. Su infancia estuvo marcada por la pobreza extrema y la violencia del entorno; sus padres eran muy jóvenes y trabajaban incansablemente en empleos de bajos ingresos para sostener el hogar. Además, Jackie tuvo que lidiar desde muy pequeña con un asma severa, una condición física que amenazaba con alejarla de cualquier actividad de alto rendimiento. <br>
+        El atletismo y el baloncesto fueron su salvación y refugio. Inspirada por un documental sobre la atleta Wilma Rudolph, Jackie pasaba horas entrenando en un centro comunitario local. Su talento natural era tan abrumador que pronto llamó la atención de las universidades, logrando una beca completa para la prestigiosa UCLA, donde no solo brilló en la pista, sino también como la base titular del equipo de baloncesto, superando la dolorosa pérdida de su madre durante su primer año universitario.</li>
+        <br>
+        <figure class="contenedor-imagen">
+            <img src="jackie joven.jpg" alt="Jackie Joyner-Kersee joven" height="400" width="650">
+            <div class="img-caption">Orígenes Humildes: La Mirada de un Sueño Olímpico</div>
+        </figure>
+        
+    <li><strong>El salto al escenario mundial:</strong> En agosto de 1984, durante los Juegos Olímpicos de Los Ángeles, un mundo expectante vio nacer la leyenda de Jackie a nivel internacional. En el heptatlón, una de las pruebas más exigentes del deporte, se quedó a tan solo cinco puntos de la medalla de oro, logrando una reñida presea de plata.
+
+        Bajo la tutela técnica de Bob Kersee, quien se convertiría en su entrenador y esposo, Jackie perfeccionó su técnica en el salto de longitud y optimizó su resistencia en las pruebas combinadas. En las pistas universitarias y los estadios olímpicos, se transformó de una joven promesa atlética a una máquina imparable de romper récords y acumular títulos.
+        <li>Títulos clave: Sus primeros oros mundiales en Roma (1987) tanto en Heptatlón como en Salto de Longitud.</li>
+        <li>Logros individuales: Primera mujer en superar la barrera mítica de los 7,000 puntos en la disciplina del Heptatlón.</li>
+        <br>
+        <figure class="contenedor-imagen">
+            <img src="jackie angeles.jpg" alt="Jackie en Los Ángeles" height="400" width="280">
+            <div class="img-caption">El Amanecer de la Reina: Jackie Joyner conquista el escenario olímpico (1984)</div>
+        </figure>
+    </li>
+
+    <li><strong>La era dorada y la rivalidad histórica:</strong> En el verano de 1988, Jackie alcanzó su madurez física y competitiva absoluta, protagonizando exhibiciones soberbias ante sus rivales en los Juegos Olímpicos de Seúl. Su imponente presencia física y consistencia técnica anticipaban un dominio absoluto en el atletismo que pocas veces el mundo del deporte ha presenciado jamás. <br>
+        En Seúl, Jackie destrozó todos los récords mundiales posibles, promediando marcas en saltos y velocidad inalcanzables. Mantuvo una rivalidad deportiva feroz con las mejores atletas de la Unión Soviética y Europa del Este, elevando el heptatlón femenino a un nivel de popularidad histórico y mediático sin precedentes.
+        
+    <div class="contenedor-cronologia-claro">
+        <div class="bloque-evento-claro">
+            <div class="columna-grafica-clara">
+                <div class="circulo-nodo-claro"></div>
+                <div class="linea-punteada-clara"></div>
+            </div>
+            <div class="columna-texto-clara">
+                <h3>El Récord Mundial Imbatible</h3>
+                <span class="año-claro">1988</span>
+                <p>Estableció un récord mundial histórico de 7,291 puntos en el heptatlón de Seúl 1988, una marca estratosférica que sigue vigente en la actualidad.</p>
+            </div>
+        </div>
+        
+        <div class="bloque-evento-claro">
+            <div class="columna-grafica-clara">
+                <div class="circulo-nodo-claro"></div>
+                <div class="linea-punteada-clara"></div>
+            </div>
+            <div class="columna-texto-clara">
+                <h3>El Doblete Dorado en Seúl</h3>
+                <span class="año-claro">1988</span>
+                <p>Consiguió dos medallas de oro consecutivas en los mismos Juegos, coronándose campeona absoluta en el heptatlón y en la final de salto de longitud.</p>
+            </div>
+        </div>
+
+        <div class="bloque-evento-claro">
+            <div class="columna-grafica-clara">
+                <div class="circulo-nodo-claro"></div>
+            </div>
+            <div class="columna-texto-clara">
+                <h3>La Consagración Definitiva</h3>
+                <span class="año-claro">1992</span>
+                <p>Se coronó bicampeona olímpica de forma consecutiva en Barcelona. Poco después, consolidó su posición como la atleta más laureada de la historia estadounidense.</p>
+            </div>
+        </div>
+    </div>
+    
+    <p>Durante su gloriosa estancia en las pistas mundiales, sumó múltiples reconocimientos individuales y fue nombrada la "Atleta Femenina del Siglo" por la revista Sports Illustrated.</p>
+    <figure class="contenedor-imagen">
+        <img src="jackie soul.jpg" alt="Jackie en Seúl" height="400" width="330">
+        <div class="img-caption">Seúl 1988: El Cierre de una Exhibición Dorada e Inigualable</div>
+    </figure>
+    </li>
+
+    <li><strong>Nuevos retos, Barcelona, Atlanta y su labor filantrópica</strong><br><br>
+        <ol><strong>✔Juegos Olímpicos de Barcelona (1992):</strong> Buscando nuevos desafíos competitivos, viajó a España. Allí retuvo su título en el heptatlón y conquistó una medalla de bronce en salto de longitud, demostrando su total vigencia atlética.</ol>
+        <figure class="contenedor-imagen">
+            <img src="jackie barcelona.jpg" alt="Jackie en Barcelona" height="400" width="740">
+            <div class="img-caption">Inmortalizando la Gloria en el Asfalto de Montjuïc</div>
+        </figure>
+
+        <ol><strong>✔El nostálgico podio en Atlanta (1996):</strong> Compitió en sus últimos Juegos Olímpicos en suelo estadounidense en un momento físico complicado debido a una severa lesión en los isquiotibiales. A pesar del inmenso dolor, logró una emotiva medalla de bronce en salto de longitud antes de su retiro.</ol>
+        <figure class="contenedor-imagen">
+            <img src="jackie atlanta.avif" alt="Jackie en Atlanta" height="400" width="710">
+            <div class="img-caption">El regreso de la reina: Pura determinación ante su público en Atlanta</div>
+        </figure>
+
+        <ol><strong>✔Fundación Jackie Joyner-Kersee (Presente):</strong> Tras su retiro oficial, Jackie firmó un compromiso histórico con su comunidad de origen en East St. Louis, financiando y abriendo las puertas de un centro comunitario masivo para alejar a los niños de los riesgos de las calles, impulsando la educación y el deporte juvenil.</ol>
+        <figure class="contenedor-imagen">
+            <img src="jackie fundacion.webp" alt="Fundación Jackie Joyner" height="400" width="570">
+            <div class="img-caption">La leyenda continúa: Jackie expande su legado fuera de las pistas</div>
+        </figure>
+    </li>
+
+    <li><strong>Leyenda con la Selección de Atletismo de EE. UU.</strong>Con la delegación nacional de las barras y las estrellas, Jackie llevó al atletismo femenino a la primera plana del deporte global. Superó los duros ataques de asma crónico a lo largo de su carrera para alcanzar la cima absoluta del Olimpo: <br><br>
+        <ol><strong>✔6 Medallas Olímpicos en total:</strong> Lideró a su selección sumando 3 medallas de oro, 1 de plata y 2 de bronce a través de cuatro participaciones olímpicas.</ol>
+        <ol><strong>✔4 Títulos Mundiales de Oro:</strong> Levantó los trofeos máximos en los Campeonatos Mundiales de Atletismo de Roma 1987, Tokio 1991 y Stuttgart 1993.</ol><br><br>
+        Actualmente, Jackie Joyner-Kersee ostenta marcas históricas de puntuación que nadie ha logrado superar y se mantiene como la única atleta en la historia en dominar simultáneamente las pruebas de velocidad, saltos y lanzamientos a ese nivel. <br><br>
+        Su carrera es el reflejo de una mentalidad inquebrantable, una preparación física obsesiva ante la adversidad de la salud y un hambre de gloria que inspira a generaciones enteras de mujeres en todo el mundo.
+        <figure class="contenedor-imagen">
+            <img src="jackie joyner.jpg" alt="USA Atletismo" height="400" width="600">
+            <div class="img-caption">Pasión sin límites por la excelencia deportiva</div>
+        </figure>
+    </li>
+</ul>
+<h3 class="nombre-leyenda">Serguéi Nazárovich Bubka</h3>
+<ul>
+    <li><strong>Orígenes humildes en Lugansk:</strong> Serguéi nació el 4 de diciembre de 1963 en Lugansk, en la entonces República Socialista Soviética de Ucrania. 
+        Fue hijo de una familia trabajadora; su padre era militar y su madre trabajaba como asistente médica en un hospital local. Su infancia estuvo alejada de los lujos y las comodidades, pero el entorno competitivo y la estricta disciplina soviética forjaron su carácter desde muy joven. <br>
+        El atletismo fue su pasión desde que descubrió el salto con pértiga a los 9 años. A pesar de las limitadas instalaciones locales, su velocidad natural y su fuerza llamaron la atención del legendario entrenador Vitaly Petrov. A los 15 años, buscando mejores condiciones para pulir su talento, se trasladó junto a su mentor a Donetsk, un cambio drástico y exigente que implicó dejar atrás a su familia a una edad muy temprana para dedicarse por completo al alto rendimiento.</li>
+        <br>
+        <figure class="contenedor-imagen">
+            <img src="nazarovich.png" alt="Serguéi Bubka joven" height="400" width="300">
+            <div class="img-caption">Orígenes Humildes: La Mirada de un Sueño</div>
+        </figure>
+        
+    <li><strong>El salto al escenario mundial:</strong> En agosto de 1983, durante el primer Campeonato Mundial de Atletismo celebrado en Helsinki, un joven y desconocido Bubka de 19 años dejó boquiabierto al planeta. Contra todo pronóstico, superó a los favoritos de la época y se colgó la medalla de oro.
+
+        Su técnica revolucionaria, caracterizada por un agarre de la pértiga mucho más alto de lo normal, asombró a los expertos del atletismo internacional. De la mano de Petrov, Serguéi transformó el salto con pértiga de una disciplina de pura agilidad a una exhibición de potencia física extrema y velocidad de velocista en la carrera de aproximación.
+        <li>Títulos clave: Su primer oro mundial en Helsinki (1983) y la histórica medalla de oro en los Juegos Olímpicos de Seúl (1988).</li>
+        <li>Logros individuales: Se convirtió en el primer ser humano en superar la mítica barrera de los 6.00 metros de altura en París (1985).</li>
+        <br>
+        <figure class="contenedor-imagen">
+            <img src="nazarovich helsinki.png" alt="Serguéi Bubka en Helsinki">
+            <div class="img-caption">El Amanecer del Zar: Serguéi Bubka Conquista el Escenario Mundial (1983)</div>
+        </figure>
+    </li>
+
+    <li><strong>La era dorada y la rivalidad histórica:</strong> Tras su consagración, Bubka inició el dominio más absoluto e implacable que el atletismo haya registrado jamás. Su principal rival en la pista no era otro atleta, sino el listón y sus propios récords mundiales, los cuales superaba centímetro a centímetro en una estrategia tan espectacular como legendaria. <br>
+        Establecido en la élite, el atleta ucraniano batió el récord mundial un total de 35 veces (17 al aire libre y 18 en pista cubierta). Su madurez física y mental le permitieron promediar marcas inalcanzables para el resto del mundo, convirtiendo cada una de sus apariciones en los mítines europeos en un auténtico fenómeno de masas.
+        
+    <div class="contenedor-cronologia-claro">
+        <div class="bloque-evento-claro">
+            <div class="columna-grafica-clara">
+                <div class="circulo-nodo-claro"></div>
+                <div class="linea-punteada-clara"></div>
+            </div>
+            <div class="columna-texto-clara">
+                <h3>La Barrera del Cielo</h3>
+                <span class="año-claro">1985</span>
+                <p>Rompió la barrera psicológica de los 6.00 metros en París, una marca que muchos científicos de la época consideraban físicamente imposible para el cuerpo humano.</p>
+            </div>
+        </div>
+        
+        <div class="bloque-evento-claro">
+            <div class="columna-grafica-clara">
+                <div class="circulo-nodo-claro"></div>
+                <div class="linea-punteada-clara"></div>
+            </div>
+            <div class="columna-texto-clara">
+                <h3>El Oro Olímpico</h3>
+                <span class="año-claro">1988</span>
+                <p>Se coronó campeón en los Juegos Olímpicos de Seúl representando a la Unión Soviética, alcanzando la gloria máxima en la cita olímpica.</p>
+            </div>
+        </div>
+
+        <div class="bloque-evento-claro">
+            <div class="columna-grafica-clara">
+                <div class="circulo-nodo-claro"></div>
+            </div>
+            <div class="columna-texto-clara">
+                <h3>La Cúspide Histórica</h3>
+                <span class="año-claro">1994</span>
+                <p>Estableció su legendario récord mundial al aire libre de 6.14 metros en Sestriere, Italia, una marca estratosférica que se mantuvo imbatible durante más de dos décadas.</p>
+            </div>
+        </div>
+    </div>
+    
+    <p>Durante su gloriosa trayectoria en las pistas mundiales, sumó el Premio Príncipe de Asturias de los Deportes (1991) y fue nombrado el mejor atleta del mundo en múltiples ocasiones.</p>
+    <figure class="contenedor-imagen">
+        <img src="nazarovich record.png" alt="Bubka celebrando récord" height="400" width="600">
+        <div class="img-caption">Sestriere 1994: El Cierre de una Era de Vuelos Legendarios</div>
+    </figure>
+    </li>
+
+    <li><strong>Nuevos retos, madurez competitiva y legado institucional</strong><br><br>
+        <ol><strong>✔Campeonatos Mundiales Consecutivos (1983-1997):</strong> Buscando extender su dominio, Bubka logró la hazaña sin precedentes de coronarse campeón del mundo en seis ediciones consecutivas de los Mundiales de Atletismo, demostrando una vigencia técnica imbatible.</ol>
+        <figure class="contenedor-imagen">
+            <img src="nazarovich mundial.jpeg" alt="Bubka en el Mundial" height="400" width="700">
+            <div class="img-caption">Inmortalizando la Gloria en el Campeonato Mundial de Atenas 1997</div>
+        </figure>
+
+        <ol><strong>✔La perseverancia ante la adversidad olímpica:</strong> A pesar de sufrir lesiones inoportunas y contratiempos en las citas olímpicas posteriores (como Barcelona 1992 o Atlanta 1996), el respeto y la admiración del público no disminuyeron, consolidándolo como el embajador definitivo de su deporte.</ol>
+        <figure class="contenedor-imagen">
+            <img src="nazarovich olimpicos.jpeg" alt="Bubka en los Juegos Olímpicos" height="400" width="600">
+            <div class="img-caption">Determinación pura: Una leyenda que desafió la gravedad ante el mundo</div>
+        </figure>
+
+        <ol><strong>✔Dirigencia Deportiva y Labor Social (Presente):</strong> Tras su retiro oficial de las pistas, Bubka firmó un fuerte compromiso con el olimpismo global. Se convirtió en miembro clave del Comité Olímpico Internacional (COI) y asumió la presidencia del Comité Olímpico de Ucrania, impulsando el desarrollo del deporte juvenil.</ol>
+        <figure class="contenedor-imagen">
+            <img src="nazarovich actual.jpg" alt="Bubka dirigente" height="400" width="340">
+            <div class="img-caption">La leyenda continúa: El Zar expande su legado desde las instituciones</div>
+        </figure>
+    </li>
+
+    <li><strong>Leyenda con la Selección de Atletismo</strong>Tanto con la delegación de la Unión Soviética como posteriormente con la de Ucrania, Bubka llevó al salto con pértiga a la primera plana del deporte global. Superó las inmensas presiones políticas de su era para alcanzar la cima absoluta del Olimpo: <br><br>
+        <ol><strong>✔Dominio Absoluto en Mundiales:</strong> Conquistó 6 medallas de oro consecutivas al aire libre y 4 títulos mundiales en pista cubierta.</ol>
+        <ol><strong>✔El Rey de los Récords Mundiales:</strong> Firmó 35 plusmarcas mundiales a lo largo de su carrera, un logro que figura con letras de oro en la historia del libro de récords.</ol><br><br>
+        Actualmente, Serguéi Bubka es considerado un pionero cuya mentalidad inquebrantable y preparación física obsesiva redefinieron las leyes de la física en el atletismo. <br><br>
+        Su carrera es el reflejo de un hambre de gloria constante que no disminuyó con los años, inspirando a generaciones enteras de atletas a mirar siempre hacia lo más alto.
+        <figure class="contenedor-imagen">
+            <img src="nazarovich lejendario.avif" alt="Salto con pértiga legendario" height="400" width="690">
+            <div class="img-caption">Pasión sin límites por alcanzar el cielo</div>
+        </figure>
+    </li>
+</ul>
+        </section>
+
+        <section class="contenedor-video" id="Historias del futbol">
+            <h2 class="Historias">5.Historias de atletismo</h2>
+            <h3 style="font-size: 30px;">Origen del atletismo</h3>
+            <video width="640" height="360" controls autoplay muted>
+                <source src="🎖La Historia del Atletismo🎖🏃🏁El origen del Atletismo🏃Evolución del atletismo🏃🏁🏆(720P_HD) (2).mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <div style="text-align: center; margin-top: 30px; margin-bottom: 20px;">
+            <button onclick="history.back()" class="btn-regresar">← Volver a la página anterior</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Portal Informativo sobre el Atletismo y la Superación Humana.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f7;
+            color: #2c3e50;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #1a252f; /* Azul noche oscuro */
+            color: white;
+            text-align: center;
+            padding: 2.5rem 0;
+            border-bottom: 5px solid #e67e22; /* Línea naranja baloncesto */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.6rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-style: italic;
+            opacity: 0.9;
+            font-size: 1.1rem;
+            color: #f39c12;
+        }
+
+        /* Navegación Interna */
+        nav {
+            background-color: #2c3e50;
+            text-align: center;
+            padding: 0.6rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #e67e22;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 0 20px;
+        }
+
+        /* Secciones */
+        section {
+            background: white;
+            padding: 35px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #e67e22;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #e67e22;
+            margin-top: 25px;
+        }
+
+        /* Imágenes */
+        .img-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .img-caption {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 7px;
+        }
+
+        /* Listas y Tablas */
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.95rem;
+        }
+
+        table, th, td {
+            border: 1px solid #bdc3c7;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9f9;
+        }
+
+        /* Cuadro de Notas */
+        .info-box {
+            background-color: #ebf5fb;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 6px 6px 0;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 1.8rem 0;
+            margin-top: 50px;
+            border-top: 4px solid #e67e22;
+        }
+
+        .btn-regresar {
+    background-color: #2ecc71; /* Un color verde fútbol, puedes cambiarlo */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-regresar:hover {
+    background-color: #27ae60; /* Verde más oscuro al pasar el cursor */
+}
+
+.nombre-leyenda {
+    color: #d97736; /* Tu color naranja actual */
+    text-align: center;
+    font-size: 30px;
+}
+
+.contenedor-imagen {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+    margin: 20px auto;      
+}
+
+/* Contenedor sin fondo negro (transparente para heredar el fondo de tu web) */
+.contenedor-cronologia-claro {
+    background-color: transparent; 
+    color: #2c3e50; /* Texto principal en gris oscuro/negro */
+    font-family: Arial, sans-serif;
+    padding: 20px 0;
+    max-width: 750px;
+}
+
+.introduccion-clara {
+    color: #2c3e50;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Alineación de las filas */
+.bloque-evento-claro {
+    display: flex;
+    gap: 20px;
+}
+
+.columna-grafica-clara {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20px;
+}
+
+/* Círculo indicador ahora en gris oscuro o negro */
+.circulo-nodo-claro {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #333333; /* Borde oscuro */
+    border-radius: 50%;
+    background-color: transparent; /* Permite ver el fondo claro de tu página adentro */
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+/* Línea discontinua oscura */
+.linea-punteada-clara {
+    width: 0px;
+    flex-grow: 1;
+    border-left: 2px dotted #666666; /* Línea gris oscura punteada */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Textos de la línea de tiempo en modo claro */
+.columna-texto-clara {
+    padding-bottom: 35px;
+}
+
+.columna-texto-clara h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50; /* Título negro destacado */
+}
+
+.columna-texto-clara .año-claro {
+    display: block;
+    color: #2c3e50; /* Año en gris */
+    font-size: 14px;
+    font-weight: bold;
+    margin: 4px 0 10px 0;
+}
+
+.columna-texto-clara p {
+    margin: 0;
+    font-size: 15px;
+    color: #2c3e50; /* Párrafos legibles en fondo claro */
+    line-height: 1.5;
+}
+
+.contenedor-video {
+    text-align: center;
+}
+
+.Historias{
+    text-align: left;
+}
+
+.boton-inicio {
+    background: transparent;    
+    border: none;               
+    color: #ffffff;             
+    font-family: inherit;       
+    font-size: inherit;        
+    font-weight: bold;         
+    padding: 0;                
+    cursor: pointer;           
+}
+
+.boton-inicio:hover {
+    color: #e67e22;
+    transition: color 0.3s ease;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deportes y Vida Saludable</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Vida Saludable</h1>
+    <p>Mejora tu salud física y mental con hábitos saludables</p>
+  </header>
+
+  <nav>
+    <a href="#deportes">Deportes</a>
+    <a href="#salud">Vida Saludable</a>
+    <a href="#tips">Consejos</a>
+    <a href="#registro">Regístrate</a> 
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <h2>Entrena hoy, vive mejor mañana</h2>
+      <!-- Botón de llamada a la acción en el Hero -->
+      <a href="registro.html/registro.html" class="btn-hero">Regístrate</a>
+    </div>
+  </section>
+
+  <section class="container" id="deportes">
+    <h2 class="section-title">Deportes Populares</h2>
+
+    <div class="cards">
+      <div class="card">
+        <a href="Futbo.html/futbol.html"><img src="Futbo.html/futbol2.jpg" alt="Fútbol" ></a>
+        <div class="card-content">
+          <h3>Fútbol</h3>
+          <p>El deporte más popular del mundo. Mejora resistencia, coordinación y trabajo en equipo.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="atletismo.html/atletismo.html"><img src="atletismo.html/atletismo.jpg" alt="atletismo"></a>
+        <div class="card-content">
+          <h3>Atletismo</h3>
+          <p>El atletismo es un deporte que agrupa disciplinas de carreras, saltos y lanzamientos para medir la velocidad, resistencia y fuerza humana.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="basquetbol.html/basquetbol.html"><img src="basquetbol.html/Baloncesto.jpg" alt="Basquetbol"></a>
+        <div class="card-content">
+          <h3>Basquetbol</h3>
+          <p>El básquetbol mejora la salud cardiovascular, fortalece los músculos y desarrolla la coordinación motriz mediante el constante movimiento y los saltos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="salud">
+    <h2 class="section-title">Vida Saludable</h2>
+
+    <div class="cards">
+      <div class="card">
+        <a href="Nutrición.html/Nutrición.html"><img src="Nutrición.html/nutricion.webp" alt="Nutrición"></a>
+        <div class="card-content">
+          <h3>Nutrición</h3>
+          <p>Una alimentación equilibrada ayuda a mantener energía y prevenir enfermedades.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="Bienestar mental.html/Bienestar mental.html"><img src="Bienestar mental.html/bienestar.avif" alt="Meditación"></a>
+        <div class="card-content">
+          <h3>Bienestar Mental</h3>
+          <p>Reducir el estrés y mejorar la concentración y el bienestar emocional.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="buen descanso.html/buen descanso.html"><img src="buen descanso.html/descanso.webp" alt="Descanso"></a>
+        <div class="card-content">
+          <h3>Buen Descanso</h3>
+          <p>Dormir bien es esencial para la recuperación física y mental.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tips" id="tips">
+    <h2>Consejos Saludables</h2>
+    <ul>
+      <li>✔ Haz ejercicio al menos 30 minutos al día</li>
+      <li>✔ Mantente hidratado</li>
+      <li>✔ Consume frutas y verduras diariamente</li>
+      <li>✔ Descansa mínimo 7 horas</li>
+      <li>✔ Mantén una actitud positiva</li>
+    </ul>
+    <button onclick="mostrarMensaje()">Ver Motivación</button>
+  </section>
+
+<section class="container" id="contacto">
+    <h2 class="section-title">Contacto</h2>
+    <div class="facebook" style="display:flex; gap:15px; justify-content:center;">
+      <a href="https://www.facebook.com/luis.angel.herrera.hernandez.717109"><img src="facebook (1).png" alt="Facebook" height="40" width="40"></a>
+      <a href="https://www.instagram.com/herreluini/"><img src="instagram.png" alt="instagram" height="40" width="40"></a>
+      <a href="https://www.youtube.com/@LuisAngelHerreraHernand%C3%A8z-r1y"><img src="youtube.png" alt="youtube" height="40" width="40"></a>
+      <a href="https://www.tiktok.com/@luiniherre"><img src="tik-tok.png" alt="tiktok" height="40" width="40"></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Deportes y Vida Saludable | Diseñado para Visual Studio Code</p>
+  </footer>
+
+  <script>
+    function mostrarMensaje(){
+      alert("¡Nunca es tarde para comenzar una vida saludable!");
+    }
+
+    // Pequeña función para simular el envío del registro
+    function registrarUsuario(event) {
+      event.preventDefault();
+      const nombre = document.getElementById('nombre').value;
+      alert(`¡Gracias por registrarte, ${nombre}! Tu cuenta ha sido creada con éxito.`);
+      document.querySelector('#registro form').reset();
+    }
+  </script>
+
+</body>
+</html>
